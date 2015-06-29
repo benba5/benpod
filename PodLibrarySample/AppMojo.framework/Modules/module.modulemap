@@ -1,0 +1,6 @@
+framework module AppMojo {
+  umbrella header "AppMojo.h"
+
+  export *
+  module * { export * }
+}

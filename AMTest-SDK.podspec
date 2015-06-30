@@ -84,13 +84,15 @@ Pod::Spec.new do |s|
 
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
 
-  s.source_files        = "PodLibrarySample/AMStaticLib/include/AMStaticLib/*.{h,m}"
-  s.vendored_libraries  = "PodLibrarySample/AMStaticLib/LibAMStaticLib.a"
+  s.source_files        = "PodLibrarySample/Headers/Public/*.h"
+  s.vendored_libraries  = "PodLibrarySample/Libraries/LibAMStaticLib.a"
+  s.public_header_files = "PodLibrarySample/Headers/Public/*.h"
+
 
     #s.vendored_frameworks = "PodLibrarySample/AppMojo.framework"
     #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

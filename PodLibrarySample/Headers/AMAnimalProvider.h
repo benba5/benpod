@@ -1,5 +1,5 @@
 //
-//  AMStaticLib.h
+//  AMAnimalProvider.h
 //  AMStaticLib
 //
 //  Created by appsynth on 6/26/15.
@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AMStaticLib : NSObject
+
+@class Animal;
+
+
+@interface AMAnimalProvider : NSObject
+
++ (Animal *) buildAnimalFromCustomClass:(Class) customClass;
 
 @end

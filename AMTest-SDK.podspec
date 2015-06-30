@@ -2,19 +2,12 @@
 
 Pod::Spec.new do |s|
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
   s.name         = "AMTest-SDK"
   s.version      = "0.0.2"
   s.summary      = "My first test pod."
 
   s.description  = <<-DESC
-                   A longer description of ben_pod2 in Markdown format.
+                   A longer description of AMTest-SDK in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -48,6 +41,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Ben" => "benlbenl5@gmail.com" }
+
   # Or just: s.author    = "Ben"
   # s.social_media_url   = "http://twitter.com/Ben"
 
@@ -59,11 +53,6 @@ Pod::Spec.new do |s|
 
   #s.platform     = :ios
   s.platform     = :ios, "7.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -85,14 +74,11 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
 
   s.source_files        = "PodLibrarySample/Headers/Public/*.h"
-  s.vendored_libraries  = "PodLibrarySample/Libraries/LibAMStaticLib.a"
-  s.public_header_files = "PodLibrarySample/Headers/Public/*.h"
-
+  #s.public_header_files = "PodLibrarySample/Headers/Public/*.h"
+  s.vendored_libraries  = "PodLibrarySample/Libraries/libAMStaticLib.a"
 
     #s.vendored_frameworks = "PodLibrarySample/AppMojo.framework"
     #s.exclude_files = "Classes/Exclude"
-
-
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
